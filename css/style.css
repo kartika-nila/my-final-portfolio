@@ -1,0 +1,753 @@
+/* ===== ОБЩИЕ СТИЛИ (работают на ВСЕХ страницах) ===== */
+
+/* Фон и шрифт для всего сайта */
+body {
+    background-color: rgba(203, 217, 240, 0.753); /* Светло-голубой фон */
+    font-family: Georgia; /* Шрифт Georgia для всего текста */
+    margin: 20px; /* Отступы от краёв окна */
+}
+
+/* Заголовок первого уровня (самый большой) */
+h1 {
+    text-align: center; /* Текст по центру */
+    margin: 40px 0 30px; /* Отступы: сверху 40px, снизу 30px */
+    color: #222; /* Тёмно-серый цвет */
+}
+
+/* Заголовок второго уровня (поменьше) */
+h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #333; /* Чуть светлее чем h1 */
+}
+
+/* Заголовок третьего уровня (ещё меньше) */
+h3 {
+    text-align: center;
+    margin: 30px 0 10px;
+    color: #333;
+    font-size: 22px; /* Размер шрифта 22px */
+}
+
+
+/* ===== МЕНЮ (навигация вверху каждой страницы) ===== */
+
+/* Контейнер для всех ссылок меню */
+.menu {
+    text-align: center; /* Ссылки по центру */
+    margin-bottom: 30px; /* Отступ снизу перед контентом */
+    padding-bottom: 10px; /* Отступ внутри снизу */
+    border-bottom: 2px solid #666; /* Серая линия под меню */
+}
+
+/* Каждая ссылка в меню */
+.menu a {
+    margin: 0 15px; /* Отступы слева-справа между ссылками */
+    color: #0066cc; /* Синий цвет ссылок */
+    text-decoration: none; /* Убираем подчёркивание */
+    font-size: 18px; /* Размер шрифта */
+}
+
+/* Когда наводим мышку на ссылку */
+.menu a:hover {
+    text-decoration: underline; /* Появляется подчёркивание */
+}
+
+
+/* ===== ФУТЕР (подвал внизу каждой страницы) ===== */
+
+/* Весь блок подвала */
+footer {
+    text-align: center; /* Весь текст по центру */
+    padding: 30px; /* Отступы внутри футера */
+    background: #f0f0f0; /* Светло-серый фон */
+    margin-top: 50px; /* Отступ сверху от контента */
+    border-top: 2px solid #ccc; /* Серая линия сверху */
+}
+
+/* Блок со ссылками на страницы */
+.footer-links {
+    margin: 15px 0; /* Отступы сверху-снизу */
+}
+
+/* Ссылки в футере */
+.footer-links a {
+    margin: 0 10px; /* Отступы между ссылками */
+    color: #333; /* Тёмно-серый цвет */
+}
+
+/* Блок с соцсетями */
+.social {
+    margin: 15px 0; /* Отступы сверху-снизу */
+}
+
+/* Ссылки на соцсети */
+.social a {
+    margin: 0 10px; /* Отступы между иконками */
+    color: blue; /* Синий цвет */
+}
+
+/* Кнопка "Наверх" */
+.back-to-top {
+    display: block; /* Блочный элемент (занимает всю ширину) */
+    margin-top: 15px; /* Отступ сверху */
+    color: #666; /* Серый цвет */
+}
+
+
+/* ===== ГЛАВНАЯ СТРАНИЦА (index.html) ===== */
+
+/* Краткое введение о себе */
+.intro {
+    text-align: center; /* Текст по центру */
+    max-width: 600px; /* Максимальная ширина блока */
+    margin: 20px auto 40px; /* Отступы и выравнивание по центру */
+    font-size: 18px; /* Размер шрифта */
+    line-height: 1.5; /* Междустрочный интервал */
+}
+
+/* Контейнер для каждого проекта на главной */
+.project {
+    margin-bottom: 40px; /* Отступ снизу между проектами */
+    text-align: center; /* Весь контент по центру */
+}
+
+/* Контейнер для картинок проекта */
+.project-images {
+    margin-bottom: 10px; /* Отступ снизу перед текстом */
+    text-align: center; /* Картинки по центру */
+}
+
+/* Каждая картинка проекта */
+.project-images img {
+    width: 400px; /* Фиксированная ширина */
+    height: 280px; /* Фиксированная высота */
+    margin: 0 10px; /* Отступы между картинками */
+    border: 1px solid #666; /* Серая рамка вокруг картинки */
+}
+
+/* Описание под картинками */
+.project-text {
+    font-size: 18px; /* Размер шрифта */
+    margin-top: 10px; /* Отступ сверху от картинок */
+}
+
+/* Блок с кнопками */
+.buttons {
+    text-align: center; /* Кнопки по центру */
+    margin: 50px 0; /* Большие отступы сверху-снизу */
+}
+
+/* Каждая кнопка */
+.button {
+    display: inline-block; /* Чтобы кнопки были в ряд */
+    margin: 0 20px; /* Отступы между кнопками */
+    padding: 12px 25px; /* Отступы внутри кнопки */
+    background: #0066cc; /* Синий фон */
+    color: white; /* Белый текст */
+    text-decoration: none; /* Без подчёркивания */
+    border-radius: 5px; /* Закруглённые углы */
+    font-size: 18px; /* Размер текста */
+}
+
+/* Когда наводим на кнопку */
+.button:hover {
+    background: #004d99; /* Более тёмный синий */
+}
+
+
+/* ===== СТРАНИЦА ПРОЕКТОВ (projects.html) ===== */
+
+/* Полная карточка проекта (с описанием, скриншотами и т.д.) */
+.project-full {
+    margin: 40px 0; /* Отступы сверху-снизу */
+    padding-bottom: 30px; /* Отступ внутри снизу */
+    border-bottom: 2px solid #ccc; /* Серая разделительная линия */
+}
+
+/* У последнего проекта убираем линию */
+.project-full:last-child {
+    border-bottom: none;
+}
+
+/* Слоган под названием проекта */
+.project-slogan {
+    text-align: center; /* Текст по центру */
+    color: #555; /* Серый цвет */
+    margin-bottom: 20px; /* Отступ снизу */
+    font-size: 18px; /* Размер шрифта */
+}
+
+/* Блок с технологиями (теги) */
+.tech-stack {
+    margin: 15px 0; /* Отступы сверху-снизу */
+    text-align: center; /* Теги по центру */
+}
+
+/* Каждый тег технологии */
+.tech-tag {
+    display: inline-block; /* Теги в ряд */
+    background: #eee; /* Светло-серый фон */
+    padding: 5px 10px; /* Отступы внутри */
+    margin: 3px; /* Отступы между тегами */
+}
+
+/* Блок "Проблема → Решение" */
+.problem-solution {
+    margin: 20px 0; /* Отступы сверху-снизу */
+}
+
+/* Абзацы внутри блока */
+.problem-solution p {
+    margin: 8px 0; /* Отступы между абзацами */
+}
+
+/* Блок "Ключевые выводы" */
+.key-takeaways {
+    margin-top: 20px; /* Отступ сверху */
+    padding: 10px; /* Отступы внутри */
+    background: #f5f5f5; /* Очень светлый серый фон */
+}
+
+
+/* ===== СТРАНИЦА ПУТЬ ОБУЧЕНИЯ (journey.html) ===== */
+
+/* Контейнер для всей временной шкалы */
+.timeline {
+    max-width: 800px; /* Максимальная ширина */
+    margin: 40px auto; /* Отступы и выравнивание по центру */
+    position: relative; /* Чтобы линию позиционировать относительно */
+}
+
+/* Вертикальная линия шкалы (псевдоэлемент before) */
+.timeline:before {
+    content: ''; /* Обязательно для псевдоэлемента */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 50px; /* Отступ слева */
+    top: 0; /* Начинается сверху */
+    bottom: 0; /* Заканчивается снизу */
+    width: 2px; /* Толщина линии */
+    background: #4361ee; /* Синий цвет */
+}
+
+/* Каждый элемент шкалы (год) */
+.timeline-item {
+    margin-bottom: 40px; /* Отступ между годами */
+    position: relative; /* Чтобы дату позиционировать */
+    padding-left: 80px; /* Отступ слева для контента */
+}
+
+/* Дата слева от линии */
+.timeline-date {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; /* Прижимаем к левому краю */
+    top: 0; /* На одном уровне с контентом */
+    width: 70px; /* Ширина блока с датой */
+    padding: 5px; /* Отступы внутри */
+    background: #4361ee; /* Синий фон */
+    color: white; /* Белый текст */
+    text-align: center; /* Текст по центру */
+    border-radius: 5px; /* Закруглённые углы */
+}
+
+/* Контент справа от линии */
+.timeline-content {
+    background: white; /* Белый фон */
+    padding: 20px; /* Отступы внутри */
+    border-radius: 8px; /* Закруглённые углы */
+    border-left: 4px solid #4361ee; /* Синяя линия слева */
+}
+
+/* Текущий (последний) элемент шкалы */
+.timeline-content.current {
+    border-left-color: #28a745; /* Зелёная линия вместо синей */
+}
+
+/* Общие стили для секций Образование, Сертификаты, Специализация */
+.education-section,
+.certificates-section,
+.specialization-section {
+    max-width: 800px; /* Максимальная ширина */
+    margin: 60px auto; /* Большие отступы и центрирование */
+    padding: 0; /* Без внутренних отступов */
+    border-top: 2px solid #4361ee; /* Синяя линия сверху */
+    padding-top: 40px; /* Отступ сверху после линии */
+}
+
+/* Заголовки этих секций */
+.education-section h2,
+.certificates-section h2,
+.specialization-section h2 {
+    margin-top: 0; /* Убираем отступ сверху */
+    color: #222; /* Цвет текста */
+    margin-bottom: 25px; /* Отступ снизу */
+    font-size: 24px; /* Размер шрифта */
+    text-align: center; /* Текст по центру */
+}
+
+/* Название университета */
+.education-item h3 {
+    color: #333; /* Цвет текста */
+    margin-bottom: 15px; /* Отступ снизу */
+    text-align: center; /* Текст по центру */
+}
+
+/* Абзацы в этих секциях */
+.education-section p,
+.certificates-section p,
+.specialization-section p {
+    line-height: 1.6; /* Междустрочный интервал */
+    margin-bottom: 20px; /* Отступ снизу */
+    text-align: center; /* Текст по центру */
+}
+
+/* Списки в Сертификатах и Специализации */
+.certificates-section ul,
+.specialization-section ul {
+    padding-left: 20px; /* Отступ слева для маркеров */
+    margin: 20px 0; /* Отступы сверху-снизу */
+}
+
+/* Пункты списков */
+.certificates-section li,
+.specialization-section li {
+    margin-bottom: 10px; /* Отступ между пунктами */
+    line-height: 1.5; /* Междустрочный интервал */
+}
+
+
+/* ===== СТРАНИЦА НАВЫКИ (skills.html) ===== */
+
+/* Контейнер для обоих блоков навыков */
+.skills-container {
+    max-width: 800px; /* Максимальная ширина */
+    margin: 0 auto; /* Выравнивание по центру */
+    padding: 0 20px; /* Отступы слева-справа */
+}
+
+/* Общие стили для обоих блоков (Hard и Soft Skills) */
+.skills-box {
+    background: white; /* Белый фон */
+    padding: 30px; /* Отступы внутри */
+    border-radius: 10px; /* Закруглённые углы */
+    margin-bottom: 40px; /* Отступ снизу между блоками */
+    border: 1px solid #ddd; /* Светло-серая рамка */
+}
+
+/* Hard Skills - синяя линия слева */
+.hard-box {
+    border-left: 5px solid #4361ee; /* Толстая синяя линия */
+}
+
+/* Soft Skills - бирюзовая линия слева */
+.soft-box {
+    border-left: 5px solid #4ecdc4; /* Толстая бирюзовая линия */
+}
+
+/* Заголовки блоков навыков */
+.skills-box h2 {
+    margin-top: 0; /* Убираем отступ сверху */
+    margin-bottom: 25px; /* Отступ снизу */
+    color: #333; /* Цвет текста */
+    text-align: center; /* Текст по центру */
+    font-size: 24px; /* Размер шрифта */
+}
+
+/* Списки навыков */
+.skills-box ul {
+    padding-left: 20px; /* Отступ слева для маркеров */
+    margin: 0; /* Убираем внешние отступы */
+}
+
+/* Каждый пункт навыка */
+.skills-box li {
+    margin-bottom: 15px; /* Отступ между пунктами */
+    line-height: 1.6; /* Междустрочный интервал */
+    color: #444; /* Цвет текста */
+    font-size: 17px; /* Размер шрифта */
+}
+
+
+/* ===== СТРАНИЦА ОБО МНЕ (about.html) ===== */
+
+/* Основной контейнер страницы */
+.about-container {
+    max-width: 1000px; /* Максимальная ширина */
+    margin: 0 auto; /* Выравнивание по центру */
+    padding: 0 20px; /* Отступы слева-справа */
+}
+
+/* Каждая секция страницы (История, Личные данные и т.д.) */
+.about-section {
+    margin-bottom: 60px; /* Большой отступ снизу */
+    padding-bottom: 40px; /* Отступ внутри снизу */
+    border-bottom: 2px solid #e0e0e0; /* Серая разделительная линия */
+}
+
+/* У последней секции убираем линию */
+.about-section:last-child {
+    border-bottom: none;
+    margin-bottom: 40px;
+}
+
+/* Заголовки секций */
+.about-section h2 {
+    color: #333; /* Цвет текста */
+    margin-bottom: 25px; /* Отступ снизу */
+    padding-bottom: 15px; /* Отступ внутри снизу */
+    border-bottom: 3px solid #4361ee; /* Синяя линия под заголовком */
+}
+
+/* Секция с фото и историей (рядом) */
+.photo-section {
+    display: flex; /* Flexbox для расположения в ряд */
+    gap: 40px; /* Расстояние между фото и текстом */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    margin-bottom: 40px; /* Отступ снизу */
+}
+
+/* Контейнер для фото */
+.about-photo {
+    flex: 0 0 250px; /* Фиксированная ширина 250px */
+}
+
+/* Само фото */
+.about-photo img {
+    width: 100%; /* Занимает всю ширину контейнера */
+    border-radius: 10px; /* Закруглённые углы */
+    border: 3px solid #4361ee; /* Синяя рамка */
+}
+
+/* Текст истории */
+.about-story {
+    flex: 1; /* Занимает всё оставшееся пространство */
+}
+
+/* Абзацы в истории */
+.about-story p {
+    line-height: 1.7; /* Междустрочный интервал */
+    margin-bottom: 20px; /* Отступ между абзацами */
+    color: #444; /* Цвет текста */
+}
+
+/* Сетка для Личных данных (2 колонки) */
+.personal-grid {
+    display: grid; /* CSS Grid для колонок */
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки одинаковой ширины */
+    gap: 40px; /* Расстояние между колонками */
+    margin-top: 20px; /* Отступ сверху от заголовка */
+}
+
+/* Заголовки внутри Личных данных */
+.personal-item h3 {
+    color: #222; /* Цвет текста */
+    margin-bottom: 15px; /* Отступ снизу */
+    font-size: 20px; /* Размер шрифта */
+}
+
+/* Списки в Личных данных */
+.personal-item ul {
+    padding-left: 20px; /* Отступ слева для маркеров */
+    margin: 0; /* Убираем внешние отступы */
+}
+
+/* Пункты списков */
+.personal-item li {
+    margin-bottom: 10px; /* Отступ между пунктами */
+    line-height: 1.5; /* Междустрочный интервал */
+    color: #555; /* Цвет текста */
+}
+
+/* Список "Почему люблю свою карьеру" */
+.passion-section ul {
+    padding-left: 25px; /* Отступ слева для маркеров */
+    margin: 20px 0; /* Отступы сверху-снизу */
+}
+
+/* Пункты этого списка */
+.passion-section li {
+    margin-bottom: 12px; /* Отступ между пунктами */
+    line-height: 1.6; /* Междустрочный интервал */
+    color: #444; /* Цвет текста */
+}
+
+/* Абзац перед списком */
+.passion-section p {
+    line-height: 1.7; /* Междустрочный интервал */
+    color: #444; /* Цвет текста */
+    margin-bottom: 20px; /* Отступ снизу перед списком */
+}
+
+/* Список целей */
+.goal-item ul {
+    padding-left: 25px; /* Отступ слева для маркеров */
+    margin: 0; /* Убираем внешние отступы */
+}
+
+/* Пункты целей */
+.goal-item li {
+    margin-bottom: 15px; /* Отступ между пунктами */
+    line-height: 1.6; /* Междустрочный интервал */
+    color: #444; /* Цвет текста */
+    font-size: 17px; /* Размер шрифта */
+}
+
+/* Список интересных фактов */
+.facts-section ul {
+    padding-left: 25px; /* Отступ слева для маркеров */
+    margin: 20px 0; /* Отступы сверху-снизу */
+}
+
+/* Пункты фактов */
+.facts-section li {
+    margin-bottom: 15px; /* Отступ между пунктами */
+    line-height: 1.6; /* Междустрочный интервал */
+    color: #444; /* Цвет текста */
+}
+
+
+/* ===== СТРАНИЦА КОНТАКТЫ (contact.html) ===== */
+
+/* Основной контейнер */
+.contact-container {
+    max-width: 1000px; /* Максимальная ширина */
+    margin: 0 auto; /* Выравнивание по центру */
+    padding: 0 20px; /* Отступы слева-справа */
+}
+
+/* Каждая секция (Форма, Контакты, Работа вместе) */
+.contact-section {
+    margin-bottom: 60px; /* Большой отступ снизу */
+    padding-bottom: 40px; /* Отступ внутри снизу */
+    border-bottom: 2px solid #e0e0e0; /* Серая разделительная линия */
+}
+
+/* У последней секции убираем линию */
+.contact-section:last-child {
+    border-bottom: none;
+    margin-bottom: 40px;
+}
+
+/* Заголовки секций */
+.contact-section h2 {
+    color: #333; /* Цвет текста */
+    margin-bottom: 30px; /* Отступ снизу */
+    padding-bottom: 15px; /* Отступ внутри снизу */
+    border-bottom: 3px solid #4361ee; /* Синяя линия под заголовком */
+}
+
+/* Форма обратной связи */
+.contact-form {
+    max-width: 700px; /* Максимальная ширина формы */
+    margin: 0 auto; /* Выравнивание по центру */
+}
+
+/* Группа полей формы (лейбл + инпут) */
+.form-group {
+    margin-bottom: 25px; /* Отступ между группами полей */
+}
+
+/* Подписи к полям формы */
+.form-group label {
+    display: block; /* Каждая на новой строке */
+    margin-bottom: 8px; /* Отступ снизу перед полем */
+    color: #333; /* Цвет текста */
+    font-weight: bold; /* Жирный шрифт */
+}
+
+/* Все поля ввода: текстовые, email, select, textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%; /* Занимают всю ширину */
+    padding: 12px 15px; /* Отступы внутри */
+    border: 1px solid #ccc; /* Серая рамка */
+    border-radius: 6px; /* Закруглённые углы */
+    font-size: 16px; /* Размер шрифта */
+    font-family: inherit; /* Наследует шрифт от body */
+}
+
+/* Когда поле в фокусе (кликнули на него) */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none; /* Убираем стандартную обводку */
+    border-color: #4361ee; /* Синяя рамка */
+    box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2); /* Синяя тень */
+}
+
+/* Кнопка отправки формы */
+.submit-btn {
+    background: #4361ee; /* Синий фон */
+    color: white; /* Белый текст */
+    border: none; /* Без рамки */
+    padding: 14px 30px; /* Отступы внутри */
+    border-radius: 6px; /* Закруглённые углы */
+    font-size: 18px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    cursor: pointer; /* Курсор-указатель при наведении */
+    width: 100%; /* Занимает всю ширину */
+    max-width: 300px; /* Но не более 300px */
+    display: block; /* Блочный элемент */
+    margin: 30px auto 0; /* Отступы и центрирование */
+    transition: background 0.3s; /* Плавное изменение фона */
+}
+
+/* Кнопка при наведении */
+.submit-btn:hover {
+    background: #3a56d4; /* Более тёмный синий */
+}
+
+/* Сетка для прямых контактов (2 колонки) */
+.direct-contacts {
+    display: grid; /* CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Автоподбор колонок */
+    gap: 40px; /* Расстояние между колонками */
+    margin-top: 20px; /* Отступ сверху от заголовка */
+}
+
+/* Каждый контакт (Email, Соцсети) */
+.contact-item h3 {
+    color: #222; /* Цвет текста */
+    margin-bottom: 15px; /* Отступ снизу */
+    font-size: 20px; /* Размер шрифта */
+}
+
+/* Текст контакта (email) */
+.contact-item p {
+    color: #444; /* Цвет текста */
+    font-size: 18px; /* Размер шрифта */
+    margin: 0; /* Убираем отступы */
+}
+
+/* Контейнер для ссылок на соцсети */
+.social-links {
+    display: flex; /* Flexbox для расположения в ряд */
+    gap: 20px; /* Расстояние между ссылками */
+    margin-top: 10px; /* Отступ сверху от заголовка */
+}
+
+/* Каждая ссылка на соцсеть */
+.social-link {
+    display: inline-block; /* Чтобы padding работал */
+    padding: 10px 20px; /* Отступы внутри */
+    background: #4361ee; /* Синий фон */
+    color: white; /* Белый текст */
+    text-decoration: none; /* Без подчёркивания */
+    border-radius: 6px; /* Закруглённые углы */
+    font-weight: bold; /* Жирный шрифт */
+    transition: background 0.3s; /* Плавное изменение фона */
+}
+
+/* Ссылка при наведении */
+.social-link:hover {
+    background: #3a56d4; /* Более тёмный синий */
+}
+
+/* Раздел "Давайте работать вместе" */
+.work-simple {
+    margin-top: 20px; /* Отступ сверху от заголовка */
+}
+
+/* Каждый пункт (Стажировка, Сотрудничество, Общение) */
+.work-point {
+    margin-bottom: 30px; /* Отступ снизу между пунктами */
+    padding-bottom: 30px; /* Отступ внутри снизу */
+    border-bottom: 1px solid #e0e0e0; /* Серая разделительная линия */
+}
+
+/* У последнего пункта убираем линию */
+.work-point:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Заголовки пунктов */
+.work-point h3 {
+    margin-top: 0; /* Убираем отступ сверху */
+    color: #222; /* Цвет текста */
+    margin-bottom: 15px; /* Отступ снизу */
+    font-size: 20px; /* Размер шрифта */
+}
+
+/* Текст в пунктах */
+.work-point p {
+    line-height: 1.6; /* Междустрочный интервал */
+    color: #444; /* Цвет текста */
+    margin: 0; /* Убираем отступы */
+}
+
+
+/* ===== ТЁМНАЯ ТЕМА (добавляется классом .dark-theme к body) ===== */
+
+/* Основные цвета тёмной темы */
+.dark-theme {
+    background-color: rgba(51, 71, 104, 0.729); /* Тёмно-синий фон */
+    color: #f0f0f0; /* Светлый текст */
+}
+
+/* Меню в тёмной теме */
+.dark-theme .menu {
+    background-color: rgba(51, 71, 104, 0.729); /* Такой же фон как у body */
+    border-bottom: 1px solid #333; /* Тёмная линия */
+}
+
+/* Ссылки в меню */
+.dark-theme .menu a {
+    color: #ddd; /* Светло-серый */
+}
+
+/* Ссылки при наведении */
+.dark-theme .menu a:hover {
+    color: #fff; /* Белый */
+    background-color: rgba(51, 71, 104, 0.729); /* Фон при наведении */
+}
+
+/* Заголовки */
+.dark-theme h1, 
+.dark-theme h2, 
+.dark-theme h3 {
+    color: #fff; /* Белый цвет */
+}
+
+/* Белые блоки становятся тёмными */
+.dark-theme .about-section,
+.dark-theme .skills-box,
+.dark-theme .timeline-content,
+.dark-theme .education-section,
+.dark-theme .certificates-section,
+.dark-theme .specialization-section,
+.dark-theme .project-full,
+.dark-theme .work-point {
+    background-color: rgba(142, 158, 184, 0.729); /* Светло-синий полупрозрачный */
+    border-color: #333; /* Тёмные рамки */
+    color: #ddd; /* Светлый текст */
+}
+
+/* Пункты списков в тёмной теме */
+.dark-theme .skills-box li,
+.dark-theme .personal-item li,
+.dark-theme .goal-item li,
+.dark-theme .passion-section li,
+.dark-theme .facts-section li {
+    color: #ccc; /* Светло-серый */
+}
+
+/* Футер в тёмной теме */
+.dark-theme footer {
+    background-color: rgba(134, 147, 170, 0.729); /* Такой же фон как у body */
+    color: #aaa; /* Серый текст */
+    border-top: 1px solid #333; /* Тёмная линия сверху */
+}
+
+/* Ссылки в футере */
+.dark-theme .footer a {
+    color: #8ab4f8; /* Светло-синий */
+}
+
+/* Кнопка переключения темы */
+.dark-theme #themeToggle {
+    background: #333; /* Тёмный фон */
+    color: #fff; /* Белый текст */
+}

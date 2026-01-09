@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Контакты | Портфолио Егиазарян Картика</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Меню -->
+    <div class="menu">
+        <a href="index.html">Главная</a>
+        <a href="projects.html">Проекты</a>
+        <a href="journey.html">Путь</a>
+        <a href="skills.html">Навыки</a>
+        <a href="about.html">Обо мне</a>
+        <a href="contact.html">Контакты</a>
+        <button id="themeToggle">🌙</button>
+    </div>
+
+    <h1>Контакты</h1>
+
+    <div class="contact-container">
+        <!-- Форма обратной связи -->
+        <div class="contact-section">
+            <h2>Форма обратной связи</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Имя *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Электронная почта *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="request-type">Тип запроса *</label>
+                    <select id="request-type" name="request-type" required>
+                        <option value="">Выберите тип запроса</option>
+                        <option value="internship">Стажировка</option>
+                        <option value="collaboration">Сотрудничество</option>
+                        <option value="question">Вопрос</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Сообщение *</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Отправить сообщение</button>
+            </form>
+        </div>
+
+        <!-- Прямые контакты -->
+        <div class="contact-section">
+            <h2>Прямые контакты</h2>
+            <div class="direct-contacts">
+                <div class="contact-item">
+                    <h3>Электронная почта</h3>
+                    <p>kartika108@yandex.ru</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="https://vk.ru/kartika_5" class="social-link">VK</a>
+                        <a href="https://t.me/homyak_ustal" class="social-link">Telegram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- Давайте работать вместе -->
+        <div class="contact-section work-together">
+            <h2>Давайте работать вместе</h2>
+            
+            <div class="work-simple">
+                <div class="work-point">
+                    <h3>Стажировка</h3>
+                    <p>Интересуюсь возможностями стажировки в сферах, связанных с филологией, образовательными технологиями и созданием контента. Готова изучать новое и применять свои навыки на практике.</p>
+                </div>
+                
+                <div class="work-point">
+                    <h3>Сотрудничество</h3>
+                    <p>Открыта к совместным проектам в области цифровой гуманитаристики, создания образовательных материалов, литературной работы и визуализации текстов.</p>
+                </div>
+                
+                <div class="work-point">
+                    <h3>Общение</h3>
+                    <p>Всегда рада новым знакомствам и обмену идеями. Если вам интересны темы цифровой филологии, образования или просто хочется пообщаться — напишите!</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Футер -->
+    <footer>
+    <p>© 2026 Егиазарян Картика</p>
+    
+    <div class="footer-links">
+        <a href="index.html">Главная</a> |
+        <a href="projects.html">Проекты</a> |
+        <a href="journey.html">Путь</a> |
+        <a href="skills.html">Навыки</a> |
+        <a href="about.html">Обо мне</a> |
+        <a href="contact.html">Контакты</a>
+    </div>
+    
+    <div class="social">
+        <a href="https://vk.ru/kartika_5">VK</a>
+        <a href="https://t.me/homyak_ustal">Telegram</a>
+    </div>
+    
+    <a href="#" class="back-to-top">↑ Наверх</a>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
