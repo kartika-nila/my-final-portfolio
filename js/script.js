@@ -24,35 +24,3 @@ if (themeToggle) {
     });
 }
 
-// ===== КНОПКА "НАВЕРХ" =====
-const backToTop = document.querySelector('.back-to-top');
-if (backToTop) {
-    backToTop.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-}
-
-// ===== ФОРМА КОНТАКТОВ =====
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Простая проверка
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        
-        if (!name || !email || !message) {
-            alert('Пожалуйста, заполните все поля');
-            return;
-        }
-        
-        alert('Сообщение отправлено! (Демо-режим)');
-        contactForm.reset();
-    });
-}
